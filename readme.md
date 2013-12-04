@@ -37,3 +37,23 @@ Hold the SHIFT key while you right-click the Windows window on the laravel root 
 
 ##That's it
 You can try to reach your local website now !
+
+
+## Mac users (with MAMP)
+
+1. Install MAMP from http://www.mamp.info/en/index.html
+2. Then edit your ~/.bash_profile to add the following line : 
+	export PATH="/Applications/MAMP/bin/php/php5.4.10/bin/:$PATH"
+
+3. Go to /tmp and type 
+	curl -sS https://getcomposer.org/installer | php
+	sudo mv composer.phar /usr/local/bin/composer
+
+4. Check your installation :
+	- Download the latest code from this repository
+	- Run the following command in the root of the repo :
+		php -S localhost:4000 server.php
+	- Check the server going to http://localhost:4000/
+
+
+
