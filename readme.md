@@ -8,7 +8,7 @@ GitHub for Windows : http://windows.github.com/
 ## Database installation
 
 Create a database with PhpMyAdmin.
-Open the file web_server_root/your_vieassoc_folder/**app/config/database.php** and update the database password and the database name with your's local credentials
+Open the file web_server_root/your_azerty_folder/**app/config/database.php** and update the database password and the database name with your's local username and password.
 
 
 ## Environment variables in Windows
@@ -25,7 +25,7 @@ Edit the **system** environment variable ( not user environment variable ) namme
 - a semicolon ;
 - then the folder where php.exe is located (I guess in your case that would be C:\xampp\php )
 
-"Path" would looks like [precedent values of path];C:\xampp\php
+"Path" would looks like [precedent values of path];C:\xampp\php (for Xampp web server)
 
 ## Database deployement
 Hold the SHIFT key while you right-click the Windows window on the laravel root folder. You should see "Open Command Window here"
