@@ -3,6 +3,8 @@ Install the github windows software.
 Then, click on tools > options and change the default storage directory to point to the webserver root.
 Fork the azertea repository and clone the code on your computer.
 
+GitHub for Windows : http://windows.github.com/
+
 ## Database installation
 
 Create a database with PhpMyAdmin.
