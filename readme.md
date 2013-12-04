@@ -8,7 +8,7 @@ GitHub for Windows : http://windows.github.com/
 ## Database installation
 
 Create a database with PhpMyAdmin.
-Open the file web_server_root/your_azerty_folder/**app/config/database.php** and update the database password and the database name with your's local username and password.
+Open the file web_server_root/your_azertea_folder/**app/config/database.php** and update the database password and the database name with your's local username and password.
 
 
 ## Environment variables in Windows
