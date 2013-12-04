@@ -1,7 +1,7 @@
 ## File installation
 Install the github windows software.
 Then, click on tools > options and change the default storage directory to point to the webserver root.
-Fork the Vie Associative repository and clone the code on your computer.
+Fork the azertea repository and clone the code on your computer.
 
 ## Database installation
 
