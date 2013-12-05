@@ -1,0 +1,18 @@
+[2013-12-05 08:46:46] log.ERROR: 404 - Exception @ /user/login
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 J:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-12-05 08:46:53] log.ERROR: 404 - Exception @ /user
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 J:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 J:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
