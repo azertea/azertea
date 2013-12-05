@@ -28,7 +28,7 @@ class UserController extends BaseController {
                 return View::make('user/login');
         }
 
-        public function getInscritpion()
+        public function getInscription()
         {
                 return View::make('user/inscription');
         }
@@ -39,7 +39,8 @@ class UserController extends BaseController {
                 $motDePasse = Input::get('motDePasse');
 
                 $result = array();
-
+                $v = new validator_user();
+                $result[""]
                 $user = User::where('login', '=', $pseudo );
 
                 if($user->motDePasse == $motDePasse)
