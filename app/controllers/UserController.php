@@ -22,17 +22,16 @@ class UserController extends BaseController {
 
                 if($user->motDePasse == $motDePasse)
                 {
-                        // TODO : Demaarer une session ???$
-                        $message = "Connexion OK";
+                        // TODO : Demaarer une session ???
+                        // Notification("Connexion OK");
                 }
                 else
                 {
-                         $message = "Connexion fail";
+                        // Echec
                 }
 
                 // Retour a la page d'accueil
-                return Redirect::to('/')->with('message', $message);
-                
+                return View::make('/');
         }
 
         public function postInscription()
@@ -54,15 +53,14 @@ class UserController extends BaseController {
                         $user->save();
 
                         // TODO : Mettre en place un systeme de notification
-                        $message = "Vous etes bien inscrit";
+                        // Notification("Vous etes bien inscrit");
                 }
                 else
                 {
-
-                         $message = "Erreur lors de l'authentification";
+                        // Notification("Erreur lors de l'inscription");
                 }
                 
                 // Redirection sur la page d'accueil
-                return Redirect::to('/')->with('message', $message);
+                return Redirect::to('/');
         }
 }
