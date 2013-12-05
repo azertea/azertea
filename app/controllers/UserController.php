@@ -60,29 +60,29 @@ class UserController extends BaseController {
 
         public function postInscription()
         {
-                // Récuperation des parametres
-                $pseudo = Input::post('pseudo');
-                $email = Input::post('email');
-                $motDePasse = Input::post('motDePasse');
+            // Récuperation des parametres
+            $pseudo = Input::post('pseudo');
+            $email = Input::post('email');
+            $motDePasse = Input::post('motDePasse');
 
-                // TODO : Faire des vérifications ...
+            // TODO : Faire des vérifications ...
 
-                if($ok)
-                {
-                    // Création de l'user en BDD
-                    $user = new User();
-                    $user->pseudo = $pseudo;
-                    $user->email = $email;
-                    $user->motDePasse = $motDePasse;
-                    $user->save();
+            if($ok)
+            {
+                // Création de l'user en BDD
+                $user = new User();
+                $user->pseudo = $pseudo;
+                $user->email = $email;
+                $user->motDePasse = $motDePasse;
+                $user->save();
 
-                    // TODO : Mettre en place un systeme de notification
-                    $result = array('success'=>'true');
-                }
-                else
-                {
-                    $result = array('error'=>'true');
-                }
-                return Response::json($result);
+                // TODO : Mettre en place un systeme de notification
+                $result = array('success'=>'true');
+            }
+            else
+            {
+                $result = array('error'=>'true');
+            }
+            return Response::json($result);
         }
 }
