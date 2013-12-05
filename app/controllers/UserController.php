@@ -46,11 +46,11 @@ class UserController extends BaseController {
                 if($user->motDePasse == $motDePasse)
                 {
                         // TODO : Demaarer une session ???$
-                        $result['message'] = "Connexion OK";
+        				$result = array('success'=>'true');
                 }
                 else
                 {
-                        $result['message'] = "Connexion fail";
+        				$result = array('error'=>'true');
                 }
 
                 // Retour a la page d'accueil
@@ -69,23 +69,20 @@ class UserController extends BaseController {
 
                 if($ok)
                 {
-                        // Création de l'user en BDD
-                        $user = new User();
-                        $user->pseudo = $pseudo;
-                        $user->email = $email;
-                        $user->motDePasse = $motDePasse;
-                        $user->save();
+                    // Création de l'user en BDD
+                    $user = new User();
+                    $user->pseudo = $pseudo;
+                    $user->email = $email;
+                    $user->motDePasse = $motDePasse;
+                    $user->save();
 
-                        // TODO : Mettre en place un systeme de notification
-                        $message = "Vous etes bien inscrit";
+                    // TODO : Mettre en place un systeme de notification
+                    $result = array('success'=>'true');
                 }
                 else
                 {
-
-                         $message = "Erreur lors de l'authentification";
+                    $result = array('error'=>'true');
                 }
-                
-                // Redirection sur la page d'accueil
-                return Redirect::to('/')->with('message', $message);
+                return Response::json($result);
         }
 }
