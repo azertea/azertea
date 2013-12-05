@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <title>Login/inscription</title>
@@ -87,13 +87,12 @@ $(document).ready(function(){
 function checkInscriptionOuConnexion() {
 
 	var email = $("#email").val();
-	
 	if(checkEmail(email)) {
 		changerBoutonCo();
 	}
-	//else{
-		//changerBoutonIns();
-	//}
+	else{
+		changerBoutonIns();
+	}
 	
 	
 }
@@ -103,18 +102,18 @@ function changerBoutonCo(){
 	$("#btninscription").hide();
 }
 
-function changerBoutonCo(){
+function changerBoutonIns(){
 	$("#btnconnection").hide();
 	$("#btninscription").show();
 }
 
 function checkEmail(email) {
-	//if (email==""){
-		return true;
-	//}
-	//else{
-	//	return true;//� modifier
-	//}
+	if (email==""){
+		return false;
+	}
+	else{
+		return true;//à modifier
+	}
 }
 
 </script>
