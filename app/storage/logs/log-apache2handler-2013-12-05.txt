@@ -88,3 +88,21 @@ Stack trace:
 #18 J:\xampp\htdocs\azertea\bootstrap\compiled.php(521): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
 #19 J:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
 #20 {main} [] []
+[2013-12-05 10:01:26] log.ERROR: 404 - Exception @ /hello/bob
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php:5125
+Stack trace:
+#0 C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php(4970): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php(4958): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php(534): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php(521): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Serveurs\XAMPP\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-12-05 10:01:40] log.ERROR: 404 - Exception @ /hello
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php:5125
+Stack trace:
+#0 C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php(4970): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php(4958): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php(534): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Serveurs\XAMPP\htdocs\azertea\bootstrap\compiled.php(521): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Serveurs\XAMPP\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
