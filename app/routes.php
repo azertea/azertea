@@ -15,3 +15,23 @@ Route::get('/', function()
 {
 	return View::make('test');
 });
+
+Route::get('/user/connect', 'UserController@getUserConnect');
+Route::post('/user/connect', 'UserController@postUserConnect');
+Route::get('/user/testEmail', 'UserController@getUserTestEmail');
+
+Route::get('/product/list', 'ProductController@getProductList');
+Route::get('/product/add', 'ProductController@getProductAdd');
+Route::post('/product/add', 'ProductController@postProductAdd');
+Route::get('/send-product', 'ProductController@getProductSend');
+Route::post('/send-product', 'ProductController@postProductSend');
+Route::get('{idProduct}-{slug-product}}', 'ProductController@getProduct')
+	->where('slug-product', '[a-zA-Z0-9-]+')
+	->where('id', '[0-9]+')
+;
+
+Route::get('/element', 'ElementController@getElement');
+Route::post('/element', 'ElementController@postElement');
+
+Route::post('/search', 'SearchController@postSearch');
+Route::post('/tree', 'TreeController@postTree');
