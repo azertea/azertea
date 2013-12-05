@@ -17,10 +17,8 @@ class UserController extends BaseController {
     public function showProfile($id)
     {
         $user = User::find($id);
-
         return View::make('user.profile', array('user' => $user));
     }
-
 }
 
 Tous les contrôleurs doivent hériter de la classe BaseController. La classe BaseController est également présente dans le dossier app/controllers, et peut être utilisée pour placer des éléments partagés. BaseController hérite de la classe Controller du framework. Maintenant, nous pouvons router vers notre contrôleur de la manière suivante :
