@@ -145,7 +145,7 @@ ___.                    __
                 <div class="controls">
                     <div class="input-prepend">
                         <span class="add-on"><i class="icon-envelope"></i></span>
-                        <input class="span2" id="email" onkeypress="checkInscriptionOuConnexion()" placeholder="Adresse mail" type="text">
+                        <input class="span2" id="email" onkeyup="checkInscriptionOuConnexion()" placeholder="Adresse mail" type="text">
                     </div>
                 </div>
             </div>
