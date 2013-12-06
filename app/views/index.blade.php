@@ -50,7 +50,7 @@ ___.                    __
           <div id="listeMat">
             <div class="well">
               <img src="assets/img/appphotoNikon.jpg" alt="Icone d'appareil photo"  height="42" width="70">
-              <a href="Cam">
+              <a href="#">
                 <span id="materiel"><b>Appareil photo Nikon PT4560</b></span>
               </a>
               <span id="prix"><b>160 €</b></span>
@@ -60,7 +60,7 @@ ___.                    __
             </div>
             <div class="well">
               <img src="assets/img/camSony.jpg" alt="Icone de camescope"  height="42" width="70">
-              <a href="Cam">
+              <a href="#">
                 <span id="materiel"><b>Camera Sony XP4500</b></span>
               </a>
               <span id="prix"><b>3 €</b></span>
@@ -70,7 +70,7 @@ ___.                    __
             </div>
             <div class="well">
               <img src="assets/img/appphotoNikon.jpg" alt="Icone d'appareil photo"  height="42" width="70">
-              <a href="Cam">
+              <a href="#">
                 <span id="materiel"><b>Appareil photo Nicon PT4560</b></span>
               </a>
               <span id="prix"><b>220 €</b></span>
@@ -80,21 +80,21 @@ ___.                    __
             </div>
             <div class="well">
               <img src="assets/img/Nexus4.png" alt="Icone de Nexus 4"  height="42" width="70">
-              <a href="Cam">
+              <a href="#">
                 <span id="materiel"><b>NEXUS 4</b></span>
               </a>
               <span id="prix"><b>250 €</b></span>
             </div>
             <div class="well">
               <img src="assets/img/appphotoNikon.jpg" alt="Icone d'appareil photo"  height="42" width="70">
-              <a href="Cam">
+              <a href="#">
                 <span id="materiel"><b>Appareil photo Nicon PT4560</b></span>
               </a>
               <span id="prix"><b>35 €</b></span>
             </div>
             <div class="well">
               <img src="assets/img/camSony.jpg" alt="Icone de camescope"  height="42" width="70">
-              <a href="Cam">
+              <a href="#">
                 <span id="materiel"><b>Camera Sony XP4500</b></span>
               </a>
               <span id="prix"><b>90 €</b></span>
@@ -102,7 +102,7 @@ ___.                    __
             
             <div class="well">
               <img src="assets/img/camSony.jpg" alt="Icone de camescope"  height="42" width="70">
-              <a href="Cam">
+              <a href="#">
                 <span id="materiel"><b>Camera Sony XP4500</b></span>
               </a>
               <span id="prix"><b>90 €</b></span>
@@ -110,7 +110,7 @@ ___.                    __
             
             <div class="well">
               <img src="assets/img/camSony.jpg" alt="Icone de camescope"  height="42" width="70">
-              <a href="Cam">
+              <a href="#">
                 <span id="materiel"><b>Camera Sony XP4500</b></span>
               </a>
               <span id="prix"><b>90 €</b></span>
