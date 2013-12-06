@@ -1,11 +1,29 @@
 <?php
 
+<<<<<<< HEAD:app/controllers/AnnonceController.php
 class AnnonceController extends BaseController {
 
-		//création liste d'annonce en fonction des catégories.
 
         public function postAnnonce()
+=======
+class ProductController extends BaseController {
+
+		//création liste d'annonce en fonction des catégories.
+		public function getProductList()
+        {
+			$recep=Input::get('');
+            $result = array(); // Requete toutes annonces pour id categorie donné
+            return Response::json($result);
+        }
+
+
+        public function getProductAdd()
+        {
+               
+        }
 		//Ajout d'une annonce par un utilisateur.
+        public function postProductAdd()
+>>>>>>> 5ea5edf10b34bbe55e5dde007eeae872b2618509:app/controllers/ProductController.php
         {
 			//Verification de l'authentification (dans le cas d'un serveur)
             if (! Auth::check())
