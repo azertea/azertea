@@ -66,7 +66,7 @@ class Database extends Migration {
 				{
 					$table->engine = 'InnoDB';
 					$table->increments('id');
-					$table->string('name');
+					$table->string('nom');
 				});
 				
 				
@@ -86,6 +86,8 @@ class Database extends Migration {
 					$table->engine = 'InnoDB';
 					$table->increments('id');
 					$table->timestamps();
+					$table->integer('id_annonce')->unsigned();
+					$table->foreign('id_annonce')->references('id')->on('annonce');
 				});
 				
 				
