@@ -199,9 +199,9 @@ ___.                    __
         nodeSource: function(node_id, callback) {
            
         var test = [
-                { id: 12, label: "Sous-cat 1", type: "folder"},
-                { id: 15, label: "Sous-cat 2", type: "folder"},
-                { id: 42, label: "Sous-cat 3", type: "folder"}
+                { id: 12, label: "Changer Ordinateur", type: "folder"},
+                { id: 15, label: "Changer Composant", type: "folder"},
+                { id: 42, label: "Réparer", type: "folder"}
                 ];
                 return callback(null, test);
         }
