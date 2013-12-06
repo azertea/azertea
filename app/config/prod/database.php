@@ -47,7 +47,7 @@ return array(
 	'connections' => array(
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'algec.iut-blagnac.fr',
+			'host'      => 'eu-cdbr-west-01.cleardb.com',
 			'database'  => 'heroku_ee12426ce1ba7f6',
 			'username'  => 'b667207a9a80aa',
 			'password'  => 'b9fabdd4',

@@ -154,3 +154,144 @@ Stack trace:
 #15 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #16 D:\xampp\htdocs\azertea\artisan(59): Symfony\Component\Console\Application->run()
 #17 {main} [] []
+[2013-12-06 05:53:31] log.ERROR: 500 - SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Hôte inconnu.  @ /
+exception 'ErrorException' with message 'PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Hôte inconnu. ' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'PDO::__construc...', 'D:\xampp\htdocs...', 47, Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=b667...', 'b667207a9a80aa', 'b9fabdd4', Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=b667...', Array, Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 D:\xampp\htdocs\azertea\artisan(59): Symfony\Component\Console\Application->run()
+#18 {main}
+
+Next exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Hôte inconnu. ' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(0): PDO->__construct()
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=b667...', Array, Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\xampp\htdocs\azertea\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
+[2013-12-06 05:53:49] log.ERROR: 500 - SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Une erreur irrécupérable s’est produite lors d’une recherche sur la base de données.  @ /
+exception 'ErrorException' with message 'PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Une erreur irrécupérable s’est produite lors d’une recherche sur la base de données. ' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'PDO::__construc...', 'D:\xampp\htdocs...', 47, Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=b9fa...', 'b667207a9a80aa', 'b9fabdd4', Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=b9fa...', Array, Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 D:\xampp\htdocs\azertea\artisan(59): Symfony\Component\Console\Application->run()
+#18 {main}
+
+Next exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Une erreur irrécupérable s’est produite lors d’une recherche sur la base de données. ' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(0): PDO->__construct()
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=b9fa...', Array, Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\xampp\htdocs\azertea\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
+[2013-12-06 05:54:03] log.ERROR: 500 - SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`heroku_ee12426ce1ba7f6`.`utilisateur`, CONSTRAINT `utilisateur_id_particulier_foreign` FOREIGN KEY (`id_particulier`) REFERENCES `particulier` (`id`)) (SQL: insert into `utilisateur` (`pseudo`, `email`, `mdp`, `est_valide`, `id_particulier`) values (?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'speudonime',
+  1 => 'azer@tea.com',
+  2 => 'df6b9fb15cfdbb7527be5a8a6e39f39e572c8ddb943fbc79a943438e9d3d85ebfc2ccf9e0eccd9346026c0b6876e0e01556fe56f135582c05fbdbb505d46755a',
+  3 => true,
+  4 => 2,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`heroku_ee12426ce1ba7f6`.`utilisateur`, CONSTRAINT `utilisateur_id_particulier_foreign` FOREIGN KEY (`id_particulier`) REFERENCES `particulier` (`id`))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `ut...', Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ut...', Array, Object(Closure))
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ut...', Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `ut...', Array)
+#5 D:\xampp\htdocs\azertea\app\models\Populate.php(53): Illuminate\Database\Query\Builder->insert(Array)
+#6 D:\xampp\htdocs\azertea\app\database\migrations\2013_12_05_232753_database.php(138): Populate::go()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(137): Database->up()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(113): Illuminate\Database\Migrations\Migrator->runUp('2013_12_05_2327...', 1, false)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(84): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(67): Illuminate\Database\Migrations\Migrator->run('D:\xampp\htdocs...', false)
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 D:\xampp\htdocs\azertea\artisan(59): Symfony\Component\Console\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`heroku_ee12426ce1ba7f6`.`utilisateur`, CONSTRAINT `utilisateur_id_particulier_foreign` FOREIGN KEY (`id_particulier`) REFERENCES `particulier` (`id`)) (SQL: insert into `utilisateur` (`pseudo`, `email`, `mdp`, `est_valide`, `id_particulier`) values (?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'speudonime',
+  1 => 'azer@tea.com',
+  2 => 'df6b9fb15cfdbb7527be5a8a6e39f39e572c8ddb943fbc79a943438e9d3d85ebfc2ccf9e0eccd9346026c0b6876e0e01556fe56f135582c05fbdbb505d46755a',
+  3 => true,
+  4 => 2,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `ut...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ut...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ut...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `ut...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(53): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\database\migrations\2013_12_05_232753_database.php(138): Populate::go()
+#6 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(137): Database->up()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(113): Illuminate\Database\Migrations\Migrator->runUp('2013_12_05_2327...', 1, false)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(84): Illuminate\Database\Migrations\Migrator->runMigrationList(Array, false)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(67): Illuminate\Database\Migrations\Migrator->run('D:\xampp\htdocs...', false)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\xampp\htdocs\azertea\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\xampp\htdocs\azertea\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
