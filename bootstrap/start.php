@@ -29,6 +29,7 @@ $app->redirectIfTrailingSlash();
 $env = $app->detectEnvironment(array(
 
 	'local' => array('localhost'),
+	'prod' => array('iut-blagnac.fr'),
 
 ));
 
