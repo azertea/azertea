@@ -11,7 +11,7 @@
 					<span class="icon-bar"></span>
 				</a>
 				<a class="brand scroller" data-section="body" href="index.html">
-						<img src="img/logo.png" alt="logo" />
+						<img src="icons/logoufound.png" alt="logo" />
 				</a>
 				<?php echo $__env->make ('template.main_html_component.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> 
 		</div>
