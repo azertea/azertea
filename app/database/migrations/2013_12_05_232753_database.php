@@ -27,7 +27,7 @@ class Database extends Migration {
 					$table->integer('n_Siret')->unsigned()->nullable();
 					$table->string('nom');
 					$table->timestamps();
-					$table->boolean('entreprise');
+					$table->boolean('aprouve');
 					$table->primary('n_Siret');
 				});
 
