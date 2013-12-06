@@ -907,3 +907,754 @@ Stack trace:
 #22 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
 #23 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
 #24 {main} [] []
+[2013-12-06 03:26:21] log.ERROR: 500 - syntax error, unexpected '=', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:13
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:27:25] log.ERROR: 500 - syntax error, unexpected '=', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:27:31] log.ERROR: 500 - syntax error, unexpected '=', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:27:41] log.ERROR: 500 - syntax error, unexpected '=', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:28:13] log.ERROR: 500 - syntax error, unexpected ';', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ';', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:17
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:28:23] log.ERROR: 500 - syntax error, unexpected ';', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ';', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:17
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:28:59] log.ERROR: 500 - syntax error, unexpected '=', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:31
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:29:15] log.ERROR: 500 - syntax error, unexpected '=', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:50
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:29:28] log.ERROR: 500 - syntax error, unexpected '=', expecting ')' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ')'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:50
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 03:32:18] log.ERROR: 500 - Method [validateInt] does not exist. @ /tree
+exception 'BadMethodCallException' with message 'Method [validateInt] does not exist.' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php:1908
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(264): Illuminate\Validation\Validator->__call('validateInt', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(264): Illuminate\Validation\Validator->validateInt('categories', '3', Array, Object(Illuminate\Validation\Validator))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(225): Illuminate\Validation\Validator->validate('categories', 'int')
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(239): Illuminate\Validation\Validator->passes()
+#4 D:\xampp\htdocs\azertea\app\validators\BaseValidator.php(11): Illuminate\Validation\Validator->fails()
+#5 D:\xampp\htdocs\azertea\app\validators\validators_search.php(16): BaseValidator->test(Array)
+#6 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(26): validators_search->tree()
+#7 [internal function]: SearchController->postTree()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postTree', Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postTree', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-12-06 03:32:18] log.ERROR: 500 - Method [validateInt] does not exist. @ /tree
+exception 'BadMethodCallException' with message 'Method [validateInt] does not exist.' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php:1908
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(264): Illuminate\Validation\Validator->__call('validateInt', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(264): Illuminate\Validation\Validator->validateInt('categories', '3', Array, Object(Illuminate\Validation\Validator))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(225): Illuminate\Validation\Validator->validate('categories', 'int')
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(239): Illuminate\Validation\Validator->passes()
+#4 D:\xampp\htdocs\azertea\app\validators\BaseValidator.php(11): Illuminate\Validation\Validator->fails()
+#5 D:\xampp\htdocs\azertea\app\validators\validators_search.php(16): BaseValidator->test(Array)
+#6 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(26): validators_search->tree()
+#7 [internal function]: SearchController->postTree()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postTree', Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postTree', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-12-06 03:34:47] log.ERROR: 500 - Method [validateInt] does not exist. @ /tree
+exception 'BadMethodCallException' with message 'Method [validateInt] does not exist.' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php:1908
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(264): Illuminate\Validation\Validator->__call('validateInt', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(264): Illuminate\Validation\Validator->validateInt('categories', '3', Array, Object(Illuminate\Validation\Validator))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(225): Illuminate\Validation\Validator->validate('categories', 'int')
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(239): Illuminate\Validation\Validator->passes()
+#4 D:\xampp\htdocs\azertea\app\validators\BaseValidator.php(11): Illuminate\Validation\Validator->fails()
+#5 D:\xampp\htdocs\azertea\app\validators\validators_search.php(16): BaseValidator->test(Array)
+#6 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(26): validators_search->tree()
+#7 [internal function]: SearchController->postTree()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postTree', Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postTree', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-12-06 04:01:52] log.ERROR: 500 - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'entreprise' in 'field list' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `entreprise`) values (?, ?, ?)) (Bindings: array (
+  0 => 40483304800022,
+  1 => 'Amazon',
+  2 => true,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'entreprise' in 'field list'' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDO->prepare('insert into `en...')
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `en...', Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#5 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#6 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#7 [internal function]: {closure}()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'entreprise' in 'field list' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `entreprise`) values (?, ?, ?)) (Bindings: array (
+  0 => 40483304800022,
+  1 => 'Amazon',
+  2 => true,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `en...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:02:47] log.ERROR: 500 - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'approuve' in 'field list' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `approuve`) values (?, ?, ?)) (Bindings: array (
+  0 => 40483304800022,
+  1 => 'Amazon',
+  2 => true,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'approuve' in 'field list'' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDO->prepare('insert into `en...')
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `en...', Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#5 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#6 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#7 [internal function]: {closure}()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'approuve' in 'field list' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `approuve`) values (?, ?, ?)) (Bindings: array (
+  0 => 40483304800022,
+  1 => 'Amazon',
+  2 => true,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `en...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:03:04] log.ERROR: 500 - SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4294967295' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 49867876889022,
+  1 => 'CDiscount',
+  2 => true,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4294967295' for key 'PRIMARY'' in D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php:58
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php(58): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): DebugBar\DataCollector\PDO\TraceablePDOStatement->execute(Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#6 D:\xampp\htdocs\azertea\app\models\Populate.php(34): Illuminate\Database\Query\Builder->insert(Array)
+#7 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#8 [internal function]: {closure}()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#15 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4294967295' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 49867876889022,
+  1 => 'CDiscount',
+  2 => true,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `en...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(34): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:03:26] log.ERROR: 500 - SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4294967295' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 49867876889022,
+  1 => 'CDiscount',
+  2 => true,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4294967295' for key 'PRIMARY'' in D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php:58
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php(58): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): DebugBar\DataCollector\PDO\TraceablePDOStatement->execute(Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#6 D:\xampp\htdocs\azertea\app\models\Populate.php(34): Illuminate\Database\Query\Builder->insert(Array)
+#7 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#8 [internal function]: {closure}()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#15 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4294967295' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 49867876889022,
+  1 => 'CDiscount',
+  2 => true,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `en...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(34): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:04:42] log.ERROR: 500 - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'azertea.utilisateurs' doesn't exist (SQL: insert into `utilisateurs` (`pseudo`, `email`, `mdp`, `est_valide`, `id_particulier`) values (?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'AzerTea',
+  1 => 'azer@tea.com',
+  2 => 'df6b9fb15cfdbb7527be5a8a6e39f39e572c8ddb943fbc79a943438e9d3d85ebfc2ccf9e0eccd9346026c0b6876e0e01556fe56f135582c05fbdbb505d46755a',
+  3 => true,
+  4 => 1,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'azertea.utilisateurs' doesn't exist' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDO->prepare('insert into `ut...')
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `ut...', Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ut...', Array, Object(Closure))
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ut...', Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `ut...', Array)
+#5 D:\xampp\htdocs\azertea\app\models\Populate.php(47): Illuminate\Database\Query\Builder->insert(Array)
+#6 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#7 [internal function]: {closure}()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'azertea.utilisateurs' doesn't exist (SQL: insert into `utilisateurs` (`pseudo`, `email`, `mdp`, `est_valide`, `id_particulier`) values (?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'AzerTea',
+  1 => 'azer@tea.com',
+  2 => 'df6b9fb15cfdbb7527be5a8a6e39f39e572c8ddb943fbc79a943438e9d3d85ebfc2ccf9e0eccd9346026c0b6876e0e01556fe56f135582c05fbdbb505d46755a',
+  3 => true,
+  4 => 1,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `ut...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `ut...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `ut...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `ut...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(47): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:04:57] log.ERROR: 500 - SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 4048332,
+  1 => 'Amazon',
+  2 => true,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY'' in D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php:58
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php(58): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): DebugBar\DataCollector\PDO\TraceablePDOStatement->execute(Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#6 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#7 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#8 [internal function]: {closure}()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#15 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 4048332,
+  1 => 'Amazon',
+  2 => true,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `en...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:05:22] log.ERROR: 500 - SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 4048332,
+  1 => 'Amazon',
+  2 => true,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY'' in D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php:58
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php(58): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): DebugBar\DataCollector\PDO\TraceablePDOStatement->execute(Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#6 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#7 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#8 [internal function]: {closure}()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#15 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 4048332,
+  1 => 'Amazon',
+  2 => true,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `en...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:05:34] log.ERROR: 500 - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'poids' in 'field list' (SQL: insert into `MC_cat` (`id_MC`, `id_categorie`, `poids`) values (?, ?, ?)) (Bindings: array (
+  0 => 1,
+  1 => 1,
+  2 => 4,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'poids' in 'field list'' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDO->prepare('insert into `MC...')
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `MC...', Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `MC...', Array, Object(Closure))
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `MC...', Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `MC...', Array)
+#5 D:\xampp\htdocs\azertea\app\models\Populate.php(231): Illuminate\Database\Query\Builder->insert(Array)
+#6 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#7 [internal function]: {closure}()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'poids' in 'field list' (SQL: insert into `MC_cat` (`id_MC`, `id_categorie`, `poids`) values (?, ?, ?)) (Bindings: array (
+  0 => 1,
+  1 => 1,
+  2 => 4,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `MC...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `MC...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `MC...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `MC...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(231): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:08:59] log.ERROR: 500 - SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 4048332,
+  1 => 'Amazon',
+  2 => true,
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY'' in D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php:58
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php(58): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): DebugBar\DataCollector\PDO\TraceablePDOStatement->execute(Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#6 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#7 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#8 [internal function]: {closure}()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#15 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4048332' for key 'PRIMARY' (SQL: insert into `entreprise` (`n_Siret`, `nom`, `aprouve`) values (?, ?, ?)) (Bindings: array (
+  0 => 4048332,
+  1 => 'Amazon',
+  2 => true,
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `en...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `en...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `en...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `en...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(30): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:10:49] log.ERROR: 500 - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'azertea.particulier' doesn't exist (SQL: insert into `particulier` (`nom`, `prenom`, `telephone`) values (?, ?, ?)) (Bindings: array (
+  0 => 'BONHOURE',
+  1 => 'Pierre',
+  2 => '0657654599',
+)) @ /
+exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'azertea.particulier' doesn't exist' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:331
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): PDO->prepare('insert into `pa...')
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `pa...', Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `pa...', Array, Object(Closure))
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `pa...', Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `pa...', Array)
+#5 D:\xampp\htdocs\azertea\app\models\Populate.php(12): Illuminate\Database\Query\Builder->insert(Array)
+#6 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#7 [internal function]: {closure}()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'azertea.particulier' doesn't exist (SQL: insert into `particulier` (`nom`, `prenom`, `telephone`) values (?, ?, ?)) (Bindings: array (
+  0 => 'BONHOURE',
+  1 => 'Pierre',
+  2 => '0657654599',
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `pa...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(332): Illuminate\Database\Connection->run('insert into `pa...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(289): Illuminate\Database\Connection->statement('insert into `pa...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1428): Illuminate\Database\Connection->insert('insert into `pa...', Array)
+#4 D:\xampp\htdocs\azertea\app\models\Populate.php(12): Illuminate\Database\Query\Builder->insert(Array)
+#5 D:\xampp\htdocs\azertea\app\routes.php(16): Populate::go()
+#6 [internal function]: {closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:25:11] log.ERROR: 500 - syntax error, unexpected '->' (T_OBJECT_OPERATOR) @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\xampp\htdocs\azertea\app\models\Requete.php:40
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 04:25:39] log.ERROR: 500 - syntax error, unexpected '->' (T_OBJECT_OPERATOR) @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\xampp\htdocs\azertea\app\models\Requete.php:67
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 04:26:21] log.ERROR: 500 - syntax error, unexpected '->' (T_OBJECT_OPERATOR) @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\xampp\htdocs\azertea\app\models\Requete.php:90
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 04:26:36] log.ERROR: 500 - syntax error, unexpected '}' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in D:\xampp\htdocs\azertea\app\models\Requete.php:260
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 04:26:56] log.ERROR: 500 - syntax error, unexpected '^' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '^'' in D:\xampp\htdocs\azertea\app\models\Requete.php:300
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 04:32:53] log.ERROR: 500 - Array to string conversion @ /search
+exception 'ErrorException' with message 'Array to string conversion' in D:\xampp\htdocs\azertea\app\models\Requete.php:214
+Stack trace:
+#0 D:\xampp\htdocs\azertea\app\models\Requete.php(214): Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'D:\xampp\htdocs...', 214, Array)
+#1 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(13): Requete->getMotCle(Array)
+#2 [internal function]: SearchController->postSearch()
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postSearch', Array)
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postSearch', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:33:28] log.ERROR: 500 - Array to string conversion @ /search
+exception 'ErrorException' with message 'Array to string conversion' in D:\xampp\htdocs\azertea\app\models\Requete.php:214
+Stack trace:
+#0 D:\xampp\htdocs\azertea\app\models\Requete.php(214): Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'D:\xampp\htdocs...', 214, Array)
+#1 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(13): Requete->getMotCle(Array)
+#2 [internal function]: SearchController->postSearch()
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postSearch', Array)
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postSearch', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2013-12-06 04:38:08] log.ERROR: 500 - Object of class stdClass could not be converted to string (SQL: select `id_categorie`, `id_MC`, `poids` from `MC_cat` where `id_MC` = ?) (Bindings: array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 1,
+  )),
+)) @ /search
+exception 'ErrorException' with message 'Object of class stdClass could not be converted to string' in D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php:58
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(4096, 'Object of class...', 'D:\xampp\htdocs...', 58, Array)
+#1 D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php(58): PDOStatement->execute(Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): DebugBar\DataCollector\PDO\TraceablePDOStatement->execute(Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `id_cate...', Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `id_cate...', Array, Object(Closure))
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select `id_cate...', Array)
+#6 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#8 D:\xampp\htdocs\azertea\app\models\Requete.php(167): Illuminate\Database\Query\Builder->get()
+#9 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(16): Requete->getCategorieMotCle(Array)
+#10 [internal function]: SearchController->postSearch()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postSearch', Array)
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postSearch', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#15 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'Object of class stdClass could not be converted to string (SQL: select `id_categorie`, `id_MC`, `poids` from `MC_cat` where `id_MC` = ?) (Bindings: array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 1,
+  )),
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(ErrorException), 'select `id_cate...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `id_cate...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select `id_cate...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\azertea\app\models\Requete.php(167): Illuminate\Database\Query\Builder->get()
+#6 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(16): Requete->getCategorieMotCle(Array)
+#7 [internal function]: SearchController->postSearch()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postSearch', Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postSearch', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-12-06 04:39:21] log.ERROR: 500 - syntax error, unexpected 'foreach' (T_FOREACH) @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'foreach' (T_FOREACH)' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:16
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 04:39:37] log.ERROR: 500 - Object of class stdClass could not be converted to string (SQL: select `id_categorie`, `id_MC`, `poids` from `MC_cat` where `id_MC` = ?) (Bindings: array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 1,
+  )),
+)) @ /search
+exception 'ErrorException' with message 'Object of class stdClass could not be converted to string' in D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php:58
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(4096, 'Object of class...', 'D:\xampp\htdocs...', 58, Array)
+#1 D:\xampp\htdocs\azertea\vendor\maximebf\debugbar\src\DebugBar\DataCollector\PDO\TraceablePDOStatement.php(58): PDOStatement->execute(Array)
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): DebugBar\DataCollector\PDO\TraceablePDOStatement->execute(Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `id_cate...', Array)
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `id_cate...', Array, Object(Closure))
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select `id_cate...', Array)
+#6 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#7 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#8 D:\xampp\htdocs\azertea\app\models\Requete.php(167): Illuminate\Database\Query\Builder->get()
+#9 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(17): Requete->getCategorieMotCle(Array)
+#10 [internal function]: SearchController->postSearch()
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postSearch', Array)
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postSearch', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#15 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'Object of class stdClass could not be converted to string (SQL: select `id_categorie`, `id_MC`, `poids` from `MC_cat` where `id_MC` = ?) (Bindings: array (
+  0 => 
+  stdClass::__set_state(array(
+     'id' => 1,
+  )),
+))' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(ErrorException), 'select `id_cate...', Array)
+#1 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `id_cate...', Array, Object(Closure))
+#2 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select `id_cate...', Array)
+#3 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\azertea\app\models\Requete.php(167): Illuminate\Database\Query\Builder->get()
+#6 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(17): Requete->getCategorieMotCle(Array)
+#7 [internal function]: SearchController->postSearch()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postSearch', Array)
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postSearch', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-12-06 04:48:06] log.ERROR: 500 - syntax error, unexpected '}' @ /search
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in D:\xampp\htdocs\azertea\app\controllers\SearchController.php:17
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-12-06 04:48:17] log.ERROR: 500 - Call to undefined method Illuminate\Database\Query\Builder::in() @ /search
+exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::in()' in D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 D:\xampp\htdocs\azertea\app\models\Requete.php(166): Illuminate\Database\Query\Builder->__call('in', Array)
+#1 D:\xampp\htdocs\azertea\app\models\Requete.php(166): Illuminate\Database\Query\Builder->in('id_MC', Array)
+#2 D:\xampp\htdocs\azertea\app\controllers\SearchController.php(18): Requete->getCategorieMotCle(Array)
+#3 [internal function]: SearchController->postSearch()
+#4 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postSearch', Array)
+#6 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postSearch', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []

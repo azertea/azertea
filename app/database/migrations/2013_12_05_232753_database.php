@@ -11,7 +11,6 @@ class Database extends Migration {
          */
         public function up()
         {
-				
 				Schema::create('particulier', function($table)
                 {
                         $table->engine = 'InnoDB';
@@ -134,7 +133,9 @@ class Database extends Migration {
 						$table->integer('id_categorie')->unsigned()->nullable();
                         $table->foreign('id_categorie')->references('id')->on('categorie');
 						$table->primary(array('id_MC','id_categorie'));
+						$table->integer('poids');
                 });
+                Populate::go();
         }
 
         /**
