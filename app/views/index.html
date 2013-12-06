@@ -1,11 +1,7 @@
-@extends('template.theme')
-
-
-@section('content')
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
-    <title>AzerTea - 2013 </title>
+    <title>Login/inscription</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -13,31 +9,10 @@
     <link href="assets/css/hcolumns.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
 
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
   <body>
-<!--
-.__                           _____             
-|  |__ _____ ___  __ ____   _/ ____\_ __  ____  
-|  |  \\__  \\  \/ // __ \  \   __\  |  \/    \ 
-|   Y  \/ __ \\   /\  ___/   |  | |  |  /   |  \
-|___|  (____  /\_/  \___  >  |__| |____/|___|  /
-     \/     \/          \/                   \/ 
-                     .___.__    .___                      
-__  _  __ ____     __| _/|__| __| _/   ____  __ _________ 
-\ \/ \/ // __ \   / __ | |  |/ __ |   /  _ \|  |  \_  __ \
- \     /\  ___/  / /_/ | |  / /_/ |  (  <_> )  |  /|  | \/
-  \/\_/  \___  > \____ | |__\____ |   \____/|____/ |__|   
-             \/       \/         \/                       
-___.                    __   
-\_ |__   ____   _______/  |_ 
- | __ \_/ __ \ /  ___/\   __\
- | \_\ \  ___/ \___ \  |  |  
- |___  /\___  >____  > |__|  
-     \/     \/     \/        
--->    
+    
     <div class="container body-class">
 
       <div id="columnsContainer">
@@ -122,9 +97,9 @@ ___.                    __
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
-                <a class="brand" href="#" style="margin-left:5px"><img src="/assets/img/logoufound.png" style="width: 95px;"></a>
+                <a class="brand" href="#" style="margin-left:5px">UFound</a>
                 <ul class="nav">
-                    <input type="text" id="search_problem_input" class="navbar-search span2" onkeyup="resetColumns(); searchKeywords()">
+                    <input type="text" id="search_problem_input" class="navbar-search span2" onkeypress="searchKeywords()">
                 </ul>
                 <ul class="nav pull-right" style="margin-right:30px">
                     <li class="active"><button class="btn btn-link" id="insco" style="right=70px; color:white" rel="popover" data-original-title><i class="icon-chevron-down"></i> Inscription/Connexion</button></li>
@@ -132,6 +107,8 @@ ___.                    __
                 </ul>
             </div>
         </div>
+
+     
         
         <!-- Champs via mail -->
         <div id="log_content" style="display:none">
@@ -141,7 +118,7 @@ ___.                    __
                 <div class="controls">
                     <div class="input-prepend">
                         <span class="add-on"><i class="icon-envelope"></i></span>
-                        <input class="span2" id="email" onkeyup="checkInscriptionOuConnexion()" placeholder="Adresse mail" type="text">
+                        <input class="span2" id="email" onkeypress="checkInscriptionOuConnexion()" placeholder="Adresse mail" type="text">
                     </div>
                 </div>
             </div>
@@ -171,13 +148,10 @@ ___.                    __
     </div>
     <div id="white_mask_group">
         <div class="white_mask" style="position:absolute; top:0px; left:0px; background-color:white; width:100%; height:100%; z-index:2000;"></div>
-        <div id="BIIIIIIIGGG_LOOOGGGOOOOO">
-        	<img src="assets/img/logoufound.png" style="position:absolute; top:30%; left:0; right:0; margin-left:auto; margin-right:auto; background-color:white; width:350px; z-index:2001; text-align:center;"/>
-        </div>
-        <div id="searchOverWhiteMask" style="position:absolute; top:50%; left:0; right:0; margin-left:auto; margin-right:auto; background-color:white; width:400px; height:300px; z-index:2001; text-align:center;">
+        <div id="searchOverWhiteMask" style="position:absolute; top:30%; left:0; right:0; margin-left:auto; margin-right:auto; background-color:white; width:400px; height:300px; z-index:2001; text-align:center;">
             <form class="">
                 <div class="input-append">
-                    <input id="mask_search_input" type="text" data-provide="typeahead" placeholder="Un problème ?" onkeypress="hideMaskAndFocus(event)" /> <!-- id="input"-->
+                    <input id="mask_search_input" type="text" data-provide="typeahead" placeholder="Un probleme ?" onkeypress="hideMaskAndFocus(event)" /> <!-- id="input"-->
                     <button class="btn">Aidez moi !</button>
                 </div>
             </form>
@@ -198,9 +172,9 @@ ___.                    __
         nodeSource: function(node_id, callback) {
            
         var test = [
-                { id: 12, label: "Changer Ordinateur", type: "folder"},
-                { id: 15, label: "Changer Composant", type: "folder"},
-                { id: 42, label: "Réparer", type: "folder"}
+                { id: 12, label: "Sous-cat 1", type: "folder"},
+                { id: 15, label: "Sous-cat 2", type: "folder"},
+                { id: 42, label: "Sous-cat 3", type: "folder"}
                 ];
                 return callback(null, test);
         }
@@ -233,10 +207,6 @@ ___.                    __
     });
   });
 
-
-  function resetColumns() {
-
-  }
 
   // 
   function searchKeywords() {
@@ -284,17 +254,13 @@ ___.                    __
   }
 
   function checkEmail(email) {
-	if (email==""){
-		return false;
-	}
-	else{
-		if(testMail(email)){
-			return true;
-		}else{
-			return false;
-		}
-	}
-}
+    if (email == ""){
+        return false;
+    }
+    else{
+        return true;//à modifier
+    }
+  }
 
   function deplierPanneau(){
     $("#panneauLateral").css('width', '80%');
@@ -316,5 +282,3 @@ ___.                    __
 
   </body>
 </html>
-
-@stop
