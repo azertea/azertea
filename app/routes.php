@@ -31,6 +31,7 @@ Route::post('/tree', 'SearchController@postTree');
 Route::post('/annonce/get', 'SearchController@postAnnonce');
 
 // Affichage d'un article
+/*
 Route::get('{idProduct}-{slug-annonce}}', 'ProductController@getProduct')
 	->where('slug-annonce', '[a-zA-Z0-9-]+')
 	->where('id', '[0-9]+');
