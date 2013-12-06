@@ -86,14 +86,14 @@ class Populate {
 		DB::table('annonce')->insert(array('nom_produit'=>'Nokia 3310', 
 											'description'=>'Qu\'il est beau mon 3310.',
 											'prix' => 15.0,
-											'photo' => '/upload/1.jpg',
+											'photo' => '/public/upload/annonces/1.jpg',
 											 'dispo' => true,
 											 'id_utilisateur' => 1
 											));
 		DB::table('annonce')->insert(array('nom_produit'=>'Reparation portable', 
 											'description'=>'Qu\'il est beau mon reparation',
 											'prix' => 99.99,
-											'photo' => '/upload/2.jpg',
+											'photo' => '/public/upload/annonces/2.jpg',
 											 'URL' => 'http://amazon.fr',
 											 'dispo' => true,
 											 'id_utilisateur' => 5
@@ -101,7 +101,7 @@ class Populate {
 		DB::table('annonce')->insert(array('nom_produit'=>'Nexus 4', 
 											'description'=>'Qu\'il est beau mon telephone.',
 											'prix' => 237.76,
-											'photo' => '/upload/3.jpg',
+											'photo' => '/public/upload/annonces/3.jpg',
 											 'URL' => 'http://amazon.fr',
 											 'dispo' => true,
 											 'id_utilisateur' => 5
@@ -109,7 +109,7 @@ class Populate {
 		DB::table('annonce')->insert(array('nom_produit'=>'Compact 1', 
 											'description'=>'Qu\'il est beau mon compact.',
 											'prix' => 80.0,
-											'photo' => '/upload/4.jpg',
+											'photo' => '/public/upload/annonces/4.jpg',
 											 'URL' => 'http://CDiscount.com',
 											 'dispo' => true,
 											 'id_utilisateur' => 6
@@ -117,7 +117,7 @@ class Populate {
 		DB::table('annonce')->insert(array('nom_produit'=>'Compact 2', 
 											'description'=>'Qu\'il est beau mon compact.',
 											'prix' => 100.0,
-											'photo' => '/upload/5.jpg',
+											'photo' => '/public/upload/annonces/5.jpg',
 											 'URL' => 'http://CDiscount.com',
 											 'dispo' => true,
 											 'id_utilisateur' => 6
@@ -125,7 +125,7 @@ class Populate {
 		DB::table('annonce')->insert(array('nom_produit'=>'Reflex TROCHER', 
 											'description'=>'Qu\'il est beau mon TROPCHER.',
 											'prix' => 4500.0,
-											'photo' => '/upload/6.jpg',
+											'photo' => '/public/upload/annonces/6.jpg',
 											 'URL' => 'http://CDiscount.com',
 											 'dispo' => true,
 											 'id_utilisateur' => 6
@@ -133,7 +133,7 @@ class Populate {
 		DB::table('annonce')->insert(array('nom_produit'=>'Etanche TROPCOOL', 
 											'description'=>'Qu\'il est beau mon TROPCOOL.',
 											'prix' => 1500.0,
-											'photo' => '/upload/7.jpg',
+											'photo' => '/public/upload/annonces/7.jpg',
 											 'URL' => 'http://CDiscount.com',
 											 'dispo' => true,
 											 'id_utilisateur' => 6
@@ -142,7 +142,7 @@ class Populate {
 		DB::table('annonce')->insert(array('nom_produit'=>'Developpement photo', 
 											'description'=>'Qu\'il est beau mon TROPCOOL.',
 											'prix' => 1500.0,
-											'photo' => '/upload/8.jpg',
+											'photo' => '/public/upload/annonces/8.jpg',
 											 'dispo' => true,
 											 'id_utilisateur' => 3
 											));	
