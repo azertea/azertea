@@ -10,14 +10,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 *
 	 * @var string
 	 */
-	protected $table = 'users';
+	protected $table = 'utilisateur';
+    public $timestamps = false;
 
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *
 	 * @var array
 	 */
-	protected $hidden = array('password');
+	protected $hidden = array('mdp');
 
 	/**
 	 * Get the unique identifier for the user.
@@ -36,7 +37,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	public function getAuthPassword()
 	{
-		return $this->password;
+		return $this->mdp;
 	}
 
 	/**
@@ -48,5 +49,13 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	{
 		return $this->email;
 	}
+    static function isTakenUsername($username){
+        $count = User::where('pseudo', '=', $username)->count();
+        return $count  != 0;
 
+    }
+    static function isTakenMail($email){
+        $count = User::where('email', '=', $email)->count();
+        return $count  != 0;
+    }
 }

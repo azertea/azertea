@@ -1648,4 +1648,7 @@ return array(
     'Whoops\\Provider\\Zend\\ExceptionStrategy' => $vendorDir . '/filp/whoops/src/Whoops/Provider/Zend/ExceptionStrategy.php',
     'Whoops\\Provider\\Zend\\RouteNotFoundStrategy' => $vendorDir . '/filp/whoops/src/Whoops/Provider/Zend/RouteNotFoundStrategy.php',
     'Whoops\\Run' => $vendorDir . '/filp/whoops/src/Whoops/Run.php',
+    'validators_user' => $baseDir . '/app/validators/validators_user.php',
+    'validators_search' => $baseDir . '/app/validators/validators_search.php',
+    'validators_add_annonce' => $baseDir . '/app/validators/validators_add_annonce.php',
 );

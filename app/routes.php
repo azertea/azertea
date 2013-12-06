@@ -22,8 +22,8 @@ Route::post('/user/inscription', 'UserController@postRegister');
 Route::post('/user/test-email', 'UserController@postTestMail');
 
 // Package peuplement
-Route::get('/annonce/add', 'ProductController@getProductAdd');
-Route::post('/annonce/add', 'ProductController@postProductAdd');
+Route::get('/annonce/add', 'AnnonceController@getProductAdd');
+Route::post('/annonce/add', 'AnnonceController@postAnnonce');
 
 //Package de recherche depuis la page d'index
 Route::post('/search', 'SearchController@postSearch');
