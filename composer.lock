@@ -3,53 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2a0ea35fd8b905f667da5f531901e6fc",
+    "hash": "0b09675d1f9e57a2ed79fd37a8f3708a",
     "packages": [
-        {
-            "name": "barryvdh/laravel-debugbar",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "710ba0b11b05d6c8fbeb3780c480ba178bbd8fcd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/710ba0b11b05d6c8fbeb3780c480ba178bbd8fcd",
-                "reference": "710ba0b11b05d6c8fbeb3780c480ba178bbd8fcd",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~4.0",
-                "maximebf/debugbar": "dev-master",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Barryvdh\\Debugbar": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "PHP Debugbar integration for Laravel",
-            "keywords": [
-                "debug",
-                "debugbar",
-                "laravel",
-                "profiler",
-                "webprofiler"
-            ],
-            "time": "2013-12-02 13:48:03"
-        },
         {
             "name": "classpreloader/classpreloader",
             "version": "1.0.1",
@@ -828,56 +783,6 @@
                 "laravel"
             ],
             "time": "2013-12-06 01:42:26"
-        },
-        {
-            "name": "maximebf/debugbar",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "2cdf83124f99e3e004e21243be2ceb3475f88597"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/2cdf83124f99e3e004e21243be2ceb3475f88597",
-                "reference": "2cdf83124f99e3e004e21243be2ceb3475f88597",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
-            },
-            "require-dev": {
-                "php": ">=5.3.0"
-            },
-            "suggest": {
-                "kriswallsmith/assetic": "The best way to manage assets",
-                "monolog/monolog": "Log using Monolog",
-                "predis/predis": "Redis storage"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "DebugBar": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Maxime Bouroumeau-Fuseau",
-                    "email": "maxime.bouroumeau@gmail.com",
-                    "homepage": "http://maximebf.com"
-                }
-            ],
-            "description": "Debug bar in the browser for php application",
-            "homepage": "https://github.com/maximebf/php-debugbar",
-            "keywords": [
-                "debug"
-            ],
-            "time": "2013-11-20 16:53:21"
         },
         {
             "name": "monolog/monolog",
@@ -1932,9 +1837,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "barryvdh/laravel-debugbar": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],
