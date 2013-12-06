@@ -4,6 +4,7 @@ class ProductController extends BaseController {
 
 		public function getProductList()
         {
+			$recep=Input::get('');
             $result = array(); // Requete toutes annonces pour id categorie donné
             return Response::json($result);
         }
