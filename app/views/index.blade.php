@@ -79,7 +79,7 @@ ___.                    __
               </p>
             </div>
             <div class="well">
-              <img src="assets/img/Nexus4.png" alt="Icone de Nexus 4"  height="42" width="70">
+              <img src="assets/img/nexus4.png" alt="Icone de Nexus 4"  height="42" width="70">
               <a href="#">
                 <span id="materiel"><b>NEXUS 4</b></span>
               </a>
