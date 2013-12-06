@@ -1,4 +1,3 @@
-
     <div id="box_login">
         <div class="container">
             <div class="span12 box_wrapper">

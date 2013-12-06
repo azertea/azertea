@@ -16,35 +16,30 @@ class ProductController extends BaseController {
         }
         public function postProductAdd()
         {
-                $nomProduit = Input::post('nomProduit');
-                $description = Input::post('description');
-                $prix = Input::post('prix');
-                $photo = Input::post('photo');
-                $url = Input::post('description');
+            $userController = new UserController;
+            $isConnected = $userController;
+            if(isset($result['success'])){
+                $v = new validators_connexion;
+                $result = $v->login();
+                if(isset($result['success'])){
+                    $annonce = new Annonce();
+                    $annonce->nomProduit = Input::get('productName');
+                    $annonce->description = Input::get('description');
+                    $annonce->prix = Input::get('price');
+                    $annonce->photo = Input::get('photo');
+                    $annonce->url = Input::get('url_sell');
+                    $annonce->dispo = false;
+                    $annonce->touch();
 
-                if($ok)
-                {
-                        // Création de l'user en BDD
-                        $annonce = new Annonce();
-                        $annonce->nomProduit = $nomProduit;
-                        $annonce->description = $description;
-                        $annonce->prix = $prix;
-                        $annonce->photo = $photo;
-                        $annonce->url = $url;
-                        $annonce->dispo = false;
-                        $annonce->save();
-
-                        // TODO : Mettre en place un systeme de notification
-                        $message = "L'annonce a été créée. Un modérateur la validera dès que possible.";
+                    $result['success'] = "L'annonce a été créée. Un modérateur la validera dès que possible.";
+                }else{
+                    TentativeConnexion::add(IP);
+                    $result['error'] = "Une erreur est survenue. Avez vous tout rentrée ?";
                 }
-                else
-                {
-
-                         $message = "Erreur lors de la création de l'annonce";
-                }
-                
-                // Redirection sur la page d'accueil
-                return Redirect::to('/')->with('message', $message);
+            }else{
+                $result['error'] = "Connexion impossible";
+            }
+            return Response::json($result);
         }
 
         public function getProductSend()

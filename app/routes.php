@@ -17,28 +17,27 @@ Route::get('/', function()
 });
 
 
-Route::get('/user/connect', 'UserController@getLogin');
+
+// Package login
 Route::post('/user/connect', 'UserController@postLogin');
-Route::get('/user/inscription', 'UserController@getInscritpion');
-Route::post('/user/inscription', 'UserController@postInscritpion');
-Route::get('/user/test-email', 'UserController@getUserTestEmail');
+Route::post('/user/inscription', 'UserController@postRegister');
+Route::post('/user/test-email', 'UserController@postTestMail');
 
-
+// Package peuplement
 Route::get('/annonce/add', 'ProductController@getProductAdd');
 Route::post('/annonce/add', 'ProductController@postProductAdd');
 
-
+// JE SAIS PAS CE QUE C'EST
 Route::get('/annonce/list', 'ProductController@getProductList');
-
-
 Route::get('/send-annonce', 'ProductController@getProductSend');
-Route::post('/send-annonce', 'ProductController@postProductSend');
 
+//Package de recherche depuis la page d'index
+Route::post('/search', 'SearchController@postSearch');
+Route::post('/tree', 'TreeController@postTree');
+Route::post('/annonce/get', 'ProductController@postGetAnnonce');
 
-
+// Affichage d'un article
 Route::get('{idProduct}-{slug-annonce}}', 'ProductController@getProduct')
 	->where('slug-annonce', '[a-zA-Z0-9-]+')
 	->where('id', '[0-9]+');
 
-Route::post('/search', 'SearchController@postSearch');
-Route::post('/tree', 'TreeController@postTree');
