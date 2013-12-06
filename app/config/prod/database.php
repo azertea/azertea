@@ -48,9 +48,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'algec.iut-blagnac.fr',
-			'database'  => 'equipe15',
-			'username'  => 'equipe15',
-			'password'  => 'zp85ce',
+			'database'  => 'heroku_ee12426ce1ba7f6',
+			'username'  => 'b667207a9a80aa',
+			'password'  => 'b9fabdd4',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
