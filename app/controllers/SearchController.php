@@ -7,9 +7,16 @@ class SearchController extends BaseController {
         if(isset($result['success'])){
         	$motCle= explode (' ', Input::get('search'));
         	//BDD
-        	$result = array('success'=>'true','categorie'=>array('0'=> 'Categorie 1','1'=> 'Categorie 2','2'=> 'Categorie 3',));
+        	$result = array('success'=>'true',
+        					'categories'=>array(
+        						array('id' => 1,
+        							'name' = > 'Categorie 1'),
+        						array('id' => 8,
+        							'name' = > 'Categorie 2'),
+        						array('id' => 654,
+        							'name' = > 'Categorie 2'),);
         }else{
-            $result['error'] = "Couple login mot de passe invalide";
+            $result['error'] = "Recherche invalide";
         }
         return Response::json($result);
     }
@@ -18,20 +25,35 @@ class SearchController extends BaseController {
         $result = $v->tree();
         if(isset($result['success'])){
         	//BDD
-        	$result = array('success'=>'true','categorie'=>array('0'=> 'Categorie 1','1'=> 'Categorie 2','2'=> 'Categorie 3',));
+        	$result = array('success'=>'true',
+        					'categories'=>array(
+        						array('id' => 1,
+        							'name' = > 'Categorie 1'),
+        						array('id' => 8,
+        							'name' = > 'Categorie 2'),
+        						array('id' => 654,
+        							'name' = > 'Categorie 2'),);
         }else{
             $result['error'] = "Couple login mot de passe invalide";
         }
         return Response::json($result);
     }
-    public function postProduit(){
+    public function postAnnonce(){
         $v = new validators_search;
         $result = $v->produit();
         if(isset($result['success'])){
         	//BDD
-        	$result = array('success'=>'true','categorie'=>array('0'=> 'Categorie 1','1'=> 'Categorie 2','2'=> 'Categorie 3',));
+        	$result = array('success'=>'true',
+        					'annonces'=>array(
+        						array('id' => 1,
+        							'slug' => 'le-nom-de-la-page',
+        							'name' = > 'Nom de produit',
+        							'price' = > '12.45€',
+        							'description'= > 'Lorem lipsum',
+        							'img'= > 'http://ecx.images-amazon.com/images/I/51XhAhK9ISL._SY300_.jpg',
+        							),);
         }else{
-            $result['error'] = "Couple login mot de passe invalide";
+            $result['error'] = "Annonce";
         }
         return Response::json($result);
     }
