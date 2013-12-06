@@ -119,7 +119,7 @@ function inscription(user, pass, mail) {
 			return "Une erreur est survenue.\nSi le problème persiste, contacter un responsable du site.\nMessage d\'erreur :\n" + textStatus + "\n" + errorThrown;
 		},
 		success: function (data, textStatus, jqXHR) {
-			$response = $.parseJSON(data);
+			$response = data;
 			if ($response.success) {
 				return true;
 			} else {

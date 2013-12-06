@@ -164,7 +164,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.hcolumns.min.js"></script>
     <script src="js/custom.js"></script>
-      <script type="text/javascript">
+    <script type="text/javascript">
 
 
     $("#columns").hColumns({
@@ -234,13 +234,12 @@
   function checkInscriptionOuConnexion() {
 
     var email = $("#email").val();
-    if(checkEmail(email)) {
+    if(testMail(email)) {
         changerBoutonCo();
     }
     else{
         changerBoutonIns();
     }
-    
     
   }
 
@@ -252,15 +251,6 @@
   function changerBoutonIns(){
     $("#btnconnection").hide();
     $("#btninscription").show();
-  }
-
-  function checkEmail(email) {
-    if (email == ""){
-        return false;
-    }
-    else{
-        return true;//à modifier
-    }
   }
 
   function deplierPanneau(){
