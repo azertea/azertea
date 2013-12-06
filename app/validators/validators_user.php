@@ -10,7 +10,7 @@ class validators_user extends BaseValidator
 
         Validator::extend('connexion', function($attribute, $value, $parameters)
         {
-            $credentialsWithUsername = array('username' => Input::get('username'),
+            $credentialsWithUsername = array('pseudo' => Input::get('username'),
                                         'password' => Input::get('password'));
             return Auth::attempt($credentialsWithUsername);
         });

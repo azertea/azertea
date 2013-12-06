@@ -2,9 +2,9 @@
 
 function AddAnnonce(productName, description, price, photo, url) {
 	$.ajax({
-		url: '/annonce/add',
+		url: 'annonce/add',
 		type: 'POST',
-		data: {productName:ProductName, description: description, price: price, photo: photo, url_sell; url},
+		data: {productName:productName, description: description, price: price, photo: photo, url_sell: url},
 		error: function (jqXHR, textStatus, errorThrown) {
 			return "Une erreur est survenue.\nSi le problème persiste, contacter un responsable du site.\nMessage d\'erreur :\n" + textStatus + "\n" + errorThrown;
 		},
@@ -23,7 +23,7 @@ function AddAnnonce(productName, description, price, photo, url) {
 // envoie la string de mot clef
 function getSearch(searchSentence) {
 	$.ajax({
-		url: '/search',
+		url: 'search',
 		type: 'POST',
 		data: { search: searchSentence},
 		error: function (jqXHR, textStatus, errorThrown) {
@@ -44,11 +44,11 @@ function getSearch(searchSentence) {
 // envoie la liste des id des categories selectionnées
 function getTree(categories) {
 	$.ajax({
-		url: '/tree',
+		url: 'tree',
 		type: 'POST',
 		data: { categories: categories},
 		error: function (jqXHR, textStatus, errorThrown) {
-			return "Une erreur est survenue.\nSi le problème persiste, contacter un responsable du site.\nMessage d\'erreur :\n" + textStatus + "\n" + errorThrown);
+			return "Une erreur est survenue.\nSi le problème persiste, contacter un responsable du site.\nMessage d\'erreur :\n" + textStatus + "\n" + errorThrown;
 		},
 		success: function (data, textStatus, jqXHR) {
 			$response = $.parseJSON(data);
@@ -64,11 +64,11 @@ function getTree(categories) {
 // envoie une liste des categorie selectionnées et renvoie nom prix description lienImage, lienSiteAnnonceur
 function getAnnonce(categories) {
 	$.ajax({
-		url: '/annonce/get',
+		url: 'annonce/get',
 		type: 'POST',
 		data: { categories: categories},
 		error: function (jqXHR, textStatus, errorThrown) {
-			return "Une erreur est survenue.\nSi le problème persiste, contacter un responsable du site.\nMessage d\'erreur :\n" + textStatus + "\n" + errorThrown);
+			return "Une erreur est survenue.\nSi le problème persiste, contacter un responsable du site.\nMessage d\'erreur :\n" + textStatus + "\n" + errorThrown;
 		},
 		success: function (data, textStatus, jqXHR) {
 			$response = $.parseJSON(data);
@@ -87,7 +87,7 @@ Si la connexion reussie, renvoie true, le message d'erreur si elle echoue
 */
 function logIn(user, pass) {
 	$.ajax({
-		url: '/user/connect',
+		url: 'user/connect',
 		type: 'POST',
 		data: { username: user, password: pass },
 		error: function (jqXHR, textStatus, errorThrown) {
@@ -110,7 +110,7 @@ Renvoie true si l'inscription reussi
 
 function inscription(user, pass, mail) {
 	$.ajax({
-		url: '/user/inscription',
+		url: 'user/inscription',
 		type: 'POST',
 		data: { username: user, password: pass, mail: mail},
 		error: function (jqXHR, textStatus, errorThrown) {
