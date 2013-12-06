@@ -21,22 +21,24 @@ function AddAnnonce(productName, description, price, photo, url) {
 
 //renvoie un tableau (id et nom catégorie) pour les mots cle searchSentence ou une erreur
 // envoie la string de mot clef
-function getSearch(searchSentence) {
+function getSearch(searchSentence, callbackSuccess, callbackError) {
 	$.ajax({
 		url: 'search',
 		type: 'POST',
 		data: { search: searchSentence},
-		error: function (jqXHR, textStatus, errorThrown) {
-			return "Une erreur est survenue.\nSi le problème persiste, contacter un responsable du site.\nMessage d\'erreur :\n" + textStatus + "\n" + errorThrown;
-		},
-		success: function (data, textStatus, jqXHR) {
-			$response = $.parseJSON(data);
-			if ($response.success) {
-				return response.categories;
-			} else {
-				return response.error;
-			}
-		}
+		// error: function (jqXHR, textStatus, errorThrown) {
+		// 	return "Une erreur est survenue.\nSi le problème persiste, contacter un responsable du site.\nMessage d\'erreur :\n" + textStatus + "\n" + errorThrown;
+		// },
+		// success: function (data, textStatus, jqXHR) {
+		// 	$response = $.parseJSON(data);
+		// 	if ($response.success) {
+		// 		return response.categories;
+		// 	} else {
+		// 		return response.error;
+		// 	}
+		// }
+		error: callbackError,
+		success: callbackSuccess
 	});
 }
 

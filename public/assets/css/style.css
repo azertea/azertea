@@ -1,0 +1,78 @@
+#search_problem_input {
+	
+	margin-top: 7px;
+
+}
+
+body {
+	width: 100%;
+	padding-top: 48px;
+
+}
+
+#columnsContainer {
+	overflow-x:hidden;
+	width:72%;
+}
+
+.container.body-class {
+	width: 100%;
+}
+
+.column ul li:hover, .column ul li.active {
+	background: #ccc;
+}
+
+#panneauLateral{
+		display: none;
+
+        border:1px solid #ccc;
+
+        background-color: white;
+
+        padding:10px;
+
+        right: 0px;
+        top: 48px;
+
+        margin-right:0px;
+        margin-top:0px;
+        position:fixed;
+        
+        height: -moz-calc(100% - 48px);
+	    height: -webkit-calc(100% - 48px);
+	    height: calc(100% - 48px);
+
+        width: 28%;
+
+        z-index: 1000;
+
+        overflow:scroll;
+}
+
+#listeMat div{
+        border-width:1px;
+        border-style:solid;
+        padding:5px;
+        margin-bottom:4px;
+        font-style:Fantasy;
+}
+
+#listeMat div:hover{
+        border-color:#808080;
+        border-width:1px;
+        border-style:solid;
+        padding:5px;
+        margin-bottom:4px;
+        font-style:Fantasy;
+}
+
+#materiel{
+        margin-left:4px;
+}
+#prix{
+        float:right;
+        margin-top:15px;
+        margin-right:5px;
+        color:#FF8C00;
+}

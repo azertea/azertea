@@ -907,3 +907,30 @@ Stack trace:
 #22 D:\xampp\htdocs\azertea\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
 #23 D:\xampp\htdocs\azertea\public\index.php(49): Illuminate\Foundation\Application->run()
 #24 {main} [] []
+[2013-12-06 04:37:08] log.ERROR: 405 - Exception @ /search
+exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1439
+Stack trace:
+#0 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/benoit/Dev/L3/Nuit2013/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-12-06 04:40:05] log.ERROR: 405 - Exception @ /search
+exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1439
+Stack trace:
+#0 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/benoit/Dev/L3/Nuit2013/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-12-06 04:48:39] log.ERROR: 404 - Exception @ /css/bootstrap.min.css
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1429
+Stack trace:
+#0 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(576): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /Users/benoit/Dev/L3/Nuit2013/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(552): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /Users/benoit/Dev/L3/Nuit2013/public/index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
