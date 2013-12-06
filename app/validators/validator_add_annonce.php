@@ -1,5 +1,5 @@
 <?php
-class validators_user extends BaseValidator
+class validators_add_annonce extends BaseValidator
 {
 	public function add(){
         // Add specific rule for the validation of data

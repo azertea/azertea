@@ -16,8 +16,6 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-
-
 // Package login
 Route::post('/user/connect', 'UserController@postLogin');
 Route::post('/user/inscription', 'UserController@postRegister');
@@ -27,17 +25,12 @@ Route::post('/user/test-email', 'UserController@postTestMail');
 Route::get('/annonce/add', 'ProductController@getProductAdd');
 Route::post('/annonce/add', 'ProductController@postProductAdd');
 
-// JE SAIS PAS CE QUE C'EST
-Route::get('/annonce/list', 'ProductController@getProductList');
-Route::get('/send-annonce', 'ProductController@getProductSend');
-
 //Package de recherche depuis la page d'index
 Route::post('/search', 'SearchController@postSearch');
-Route::post('/tree', 'TreeController@postTree');
-Route::post('/annonce/get', 'ProductController@postGetAnnonce');
+Route::post('/tree', 'SearchController@postTree');
+Route::post('/annonce/get', 'SearchController@postAnnonce');
 
 // Affichage d'un article
 Route::get('{idProduct}-{slug-annonce}}', 'ProductController@getProduct')
 	->where('slug-annonce', '[a-zA-Z0-9-]+')
 	->where('id', '[0-9]+');
-

@@ -1,5 +1,7 @@
 <?php
+//classe de verification des données envoyer par les formulaire ajax
 class BaseValidator{
+	//verification des input
 	public function test($rules,$toPurify=array()){
         $inputs = Input::get();
         if(!empty($toPurify)){
