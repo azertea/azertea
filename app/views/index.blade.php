@@ -5,7 +5,7 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <title>Login/inscription</title>
+    <title>AzerTea - 2013 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -16,8 +16,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
   <body>
-    
-    
+<!--
+.__                           _____             
+|  |__ _____ ___  __ ____   _/ ____\_ __  ____  
+|  |  \\__  \\  \/ // __ \  \   __\  |  \/    \ 
+|   Y  \/ __ \\   /\  ___/   |  | |  |  /   |  \
+|___|  (____  /\_/  \___  >  |__| |____/|___|  /
+     \/     \/          \/                   \/ 
+                     .___.__    .___                      
+__  _  __ ____     __| _/|__| __| _/   ____  __ _________ 
+\ \/ \/ // __ \   / __ | |  |/ __ |   /  _ \|  |  \_  __ \
+ \     /\  ___/  / /_/ | |  / /_/ |  (  <_> )  |  /|  | \/
+  \/\_/  \___  > \____ | |__\____ |   \____/|____/ |__|   
+             \/       \/         \/                       
+___.                    __   
+\_ |__   ____   _______/  |_ 
+ | __ \_/ __ \ /  ___/\   __\
+ | \_\ \  ___/ \___ \  |  |  
+ |___  /\___  >____  > |__|  
+     \/     \/     \/        
+-->    
     <div class="container body-class">
 
       <div id="columnsContainer">
