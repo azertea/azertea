@@ -2,6 +2,7 @@
 
 class ProductController extends BaseController {
 
+		//création liste d'annonce en fonction des catégories.
 		public function getProductList()
         {
 			$recep=Input::get('');
@@ -14,8 +15,10 @@ class ProductController extends BaseController {
         {
                
         }
+		//Ajout d'une annonce par un utilisateur.
         public function postProductAdd()
         {
+			//Verification de l'authentification (dans le cas d'un serveur)
             if (! Auth::check())
                 $userController = new UserController;
                 $isConnected = $userController->login();
@@ -24,6 +27,7 @@ class ProductController extends BaseController {
                     return Response::json($result);
                 }
             }
+			//ajout de l'annonce en pending
             $v = new validators_add_annonce;
             $result = $v->login();
             if(isset($result['success'])){
