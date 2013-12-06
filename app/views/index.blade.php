@@ -2,7 +2,7 @@
 
 
 @section('content')
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Login/inscription</title>
@@ -12,6 +12,8 @@
     <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen" type="text/css" />
     <link href="assets/css/hcolumns.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
@@ -102,7 +104,9 @@
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
-                <a class="brand" href="#" style="margin-left:5px">UFound</a>
+                <a class="brand" href="#" style="margin-left:5px"><img src="/assets/img/logoufound.png" style="
+    width: 95px;
+"></a>
                 <ul class="nav">
                     <input type="text" id="search_problem_input" class="navbar-search span2" onkeypress="searchKeywords()">
                 </ul>
