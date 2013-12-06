@@ -1,4 +1,7 @@
+@extends('template.theme')
 
+
+@section('content')
     <div id="box_sign">
         <div class="container">
             <div class="span12 box_wrapper">
@@ -25,3 +28,4 @@
             </div>
         </div>
     </div>
+@stop
