@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login/inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+	
+	
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<a class="brand" href="#" style="margin-left:5px">UFound</a>
+			<ul class="nav">
+					<input class="navbar-search" style="border-radius: 4px" class="span2">
+					
+			</ul>
+			<ul class="nav pull-right" style="margin-right:30px">
+				<li class="active"><button class="btn btn-link" id="insco" style="right=70px; color:white" rel="popover" data-original-title><i class="icon-chevron-down"></i> Inscription/Connexion</button></li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Champs via mail -->
+	<div id="log_content" style="display:none">
+    <div class="raw">
+		<div class="control-group">
+			<label class="control-label" for="inputIcon"></label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-envelope"></i></span>
+					<input class="span2" id="email" onkeypress="checkInscriptionOuConnexion()" placeholder="Adresse mail" type="text">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="raw">
+		<div class="control-group">
+			<label class="control-label" for="inputIcon"></label>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-certificate"></i></span>
+					<input class="span2" id="inputIcon" placeholder="Mot de passe" type="password">
+				</div>
+			</div>
+		</div>
+	</div>
+    
+	<div class="raw">
+		<button class="btn" id="btninscription">
+		<i class="icon-download-alt"></i> S'inscrire
+		</button>
+	<button class="btn" id="btnconnection" style="display:none" ><i class="icon-user"></i> Se connecter</button>
+    </div>
+	</div>
+  
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+
+$(function (){
+   $("#insco").popover({
+   	html : true,
+   	placement:'bottom',
+	content: function() {
+		return $('#log_content').html();
+    },
+    title: function() {
+		return $('#log_title').html();
+    },
+	template: '<div class="popover"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+    }); 
+});
+
+
+
+$(function (){
+   $('a').tooltip({placement:'bottom'});
+});
+
+$(document).ready(function(){
+  $('#insco').popover({ 
+    html : true,
+
+  });
+});
+
+function checkInscriptionOuConnexion() {
+
+	var email = $("#email").val();
+	if(checkEmail(email)) {
+		changerBoutonCo();
+	}
+	else{
+		changerBoutonIns();
+	}
+	
+	
+}
+
+function changerBoutonCo(){
+	$("#btnconnection").show();
+	$("#btninscription").hide();
+}
+
+function changerBoutonIns(){
+	$("#btnconnection").hide();
+	$("#btninscription").show();
+}
+
+function checkEmail(email) {
+	if (email==""){
+		return false;
+	}
+	else{
+		return true;//à modifier
+	}
+}
+
+</script>
+
+  </body>
+</html>
