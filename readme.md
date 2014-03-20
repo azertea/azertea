@@ -1,3 +1,6 @@
+## Team information
+Find more informations about us : [here](http://www.nuitdelinfo.com/nuitinfo/teams:equipe_15_azertea_at:start)
+
 ## File installation
 Install the github windows software.
 Then, click on tools > options and change the default storage directory to point to the webserver root.
